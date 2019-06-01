@@ -1,42 +1,57 @@
-body{
-  background: #76b852; /* fallback for old browsers */
-  font-family: "Roboto", sans-serif;
-}
-.container
-{
-    width: 100%;
-
-    /*ancho y alto es width y height*/
-    border-radius: 10px;
-    overflow: hidden;
+* {
+  box-sizing: border-box;
 }
 
-.semestre
-{
-
-  display: inline-block;
-  width: auto;
-  padding: 5px;
-  border: 1px solid blue;
+.content {
+  text-align: center;
+  overflow: hidden;
+  color: white;
 }
-#materias
-{
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    margin: 20px;
-    overflow: hidden;
+.semestre {
+  width: 20%;
+  float:left;
+  background: #244F75;
 }
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+.semestre1 {
+  width: 20%;
+  float:left;
+       background: #60BFBF;
+}
+.semestre2 {
+  width: 20%;
+  float:left;
+       background: #8C4B7E;
+}
+.semestre3 {
+  width: 20%;
+  float:left;
+       background: #F8BB44;
+}
+.semestre4 {
+  width: 20%;
+  float:left;
+  background: #F6BB44;
+}
+/* Demo purposes */
 
-  padding: 20px;
+body {
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  line-height: 1.5;
 }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+h1, h2 {
+  font-weight: 300;
+}
+
+
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0 0 16px;
 }
