@@ -1,0 +1,42 @@
+body{
+  background: #76b852; /* fallback for old browsers */
+  font-family: "Roboto", sans-serif;
+}
+.container
+{
+    width: 100%;
+
+    /*ancho y alto es width y height*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.semestre
+{
+
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+  border: 1px solid blue;
+}
+#materias
+{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    overflow: hidden;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
