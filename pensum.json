@@ -1,0 +1,22 @@
+{"materias":[
+    {"codMateria":1, "nomMateria":"Calculo 1", "semestre":1, "creditos":4,"estadoMateria":false},
+    {"codMateria":2, "nomMateria":"Informatica", "semestre":1, "creditos":3,"estadoMateria":false},
+    {"codMateria":3, "nomMateria":"Calculo 2", "semestre":2, "creditos":4,"estadoMateria":false},
+    {"codMateria":4, "nomMateria":"Objetos", "semestre":2, "creditos":4,"estadoMateria":false},
+    {"codMateria":5, "nomMateria":"Electromagnetismo", "semestre":3, "creditos":5,"estadoMateria":false},
+    {"codMateria":6, "nomMateria":"Estructuras", "semestre":3, "creditos":4,"estadoMateria":false},
+    {"codMateria":7, "nomMateria":"Ecuaciones", "semestre":4, "creditos":4,"estadoMateria":false},
+    {"codMateria":8, "nomMateria":"Vibraciones y ondas", "semestre":4, "creditos":3,"estadoMateria":false},
+    {"codMateria":9, "nomMateria":"Bases de datos", "semestre":5, "creditos":2,"estadoMateria":false},
+    {"codMateria":10, "nomMateria":"Vibraciones y ondas", "semestre":5, "creditos":5,"estadoMateria":false},
+    {"codMateria":11, "nomMateria":"Fisica moderna", "semestre":6, "creditos":2,"estadoMateria":false},
+    {"codMateria":12, "nomMateria":"Fisica Cuantica", "semestre":7, "creditos":3,"estadoMateria":false},
+    {"codMateria":13, "nomMateria":"Criptografia", "semestre":7, "creditos":4,"estadoMateria":false},
+    {"codMateria":14, "nomMateria":"Arquitectura", "semestre":7, "creditos":2,"estadoMateria":false},
+    {"codMateria":15, "nomMateria":"Ing software", "semestre":8, "creditos":5,"estadoMateria":false},
+    {"codMateria":16, "nomMateria":"Compiladores", "semestre":8, "creditos":4,"estadoMateria":false},
+    {"codMateria":17, "nomMateria":"Criptografia cuantica", "semestre":9, "creditos":4,"estadoMateria":false},
+    {"codMateria":18, "nomMateria":"Inteligencia artificial", "semestre":9, "creditos":2,"estadoMateria":false},
+    {"codMateria":19, "nomMateria":"Redes", "semestre":5, "creditos":10,"estadoMateria":false},
+    {"codMateria":20, "nomMateria":"Criptografia poscuantica", "semestre":10, "creditos":5,"estadoMateria":false}
+]}

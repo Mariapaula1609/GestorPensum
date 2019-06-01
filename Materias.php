@@ -6,14 +6,19 @@ class Materia
   public $semestre=0;
   public $numeroCreditos=0;
   public $estado="repobrado";
-}
+
 function __construct(int $codigo, string $nombre, string $semestre, string $numeroCreditos, string $estado){
     $this->codigo= $codigo;
-    $this->nombre = $nombre;
-    $this->semestre =$semestre;
-    $this->numeroCreditos =$numeroCreditos;
-    $this->estado= $estado
-}/**
+    $this->nombre=$nombre;
+    $this->semestre=$semestre;
+    $this->numeroCreditos=$numeroCreditos;
+    $this->estado= $estado;
+}
+public static function createFromArray($arr){
+    $materia = new Materia( $arr["codigo"],$arr["nombre"],$arr["semestre"],$arr["numeroCreditos"],$arr["estado"]);
+}
+
+/**
      * Get the value of codigo
      */
 public function getcodigo(){
@@ -40,7 +45,7 @@ public function getNombre(){
  * @return  self
  */
 public function setNombre($nombre){
-  $this->nombre=$nombre
+  $this->nombre=$nombre;
 }
 
 public function getSemestre(){
@@ -51,7 +56,5 @@ public function setSemestre($semestre){
   $this->semestre=$semestre;
 }
 
-
-
-
+}
  ?>
