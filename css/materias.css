@@ -9,113 +9,57 @@
   color: black;
   background: #ECEFF1;
 }
+/* Demo purposes */
+.materia{
+  margin: 5px;
+  height:  80px;
+  overflow: auto;
+  border-radius: 5px;
+  border-style: solid;
+}
+.materia h3{
+  padding: 0px;
+  margin: 0px;
+}
+#materias{
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.semestre{
+  width: 18%;
+  display:inline-table;
+}
 
 #semestre1 {
-  width: 20%;
-  float:left;
        background:#F1F8E9;
 }
 #semestre2 {
-  width: 20%;
-  float:left;
-       background: #DCEDC8;
+  background: #DCEDC8;
 }
 #semestre3 {
-  width: 20%;
-  float:left;
        background: #C5E1A5;
 }
 #semestre4 {
-  width: 20%;
-  float:left;
   background: #AED581;
 }
 #semestre5 {
-  width: 20%;
-  float:left;
   background: #9CCC65;
 }
-#semestre6 {
-  width: 20%;
-  float:left;
-  background: #8BC34A;
-}
-#semestre7{
-  width: 20%;
-  float:left;
-  background: #7CB342;
-}
-#semestre8 {
-  width: 20%;
-  float:left;
-  background: #689F38;
+#semestre10 {
+       background:#F1F8E9;
 }
 #semestre9 {
-  width: 20%;
-  float:left;
-  background: #558B2F;
+  background: #DCEDC8;
 }
-#semestre10 {
-  width: 20%;
-  float:left;
-  background: #33691E;
+#semestre8 {
+       background: #C5E1A5;
 }
-/* Demo purposes */
-.materia{
-  margin: 3px;
-  border-radius: 5px;
-  border-style: solid;
-
+#semestre7 {
+  background: #AED581;
 }
-.materias1{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias2{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias3{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias4{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias5{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias6{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias7{
-  margin: 6px;
-  border-radius: 5px;
-
-}
-.materias8{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias9{
-  margin: 5px;
-  border-radius: 5px;
-
-}
-.materias10{
-  margin: 5px;
-  border-radius: 5px;
-
+#semestre6 {
+  background: #9CCC65;
 }
 
 body {
@@ -125,17 +69,18 @@ body {
   line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2,h3 {
   font-weight: 300;
 }
-
 
 
 h2 {
   font-size: 36px;
   margin: 0 0 16px;
 }
-
+h3{
+  font-size: 20px;
+}
 p {
   margin: 0 0 16px;
 }

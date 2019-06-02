@@ -18,7 +18,7 @@ function enviarCodigoServer(codigo){
 function cargarMaterias(datos){
   let semestres =[];
   for(var i = 1;i<=10;i++){
-    semestres.push(document.querySelector("#materias"+i));
+    semestres.push(document.querySelector("#semestre"+i).querySelector("#materias"));
     semestres[i-1].innerHTML = '';
   }
   console.log(semestres);
@@ -32,7 +32,11 @@ function cargarMaterias(datos){
       console.log("materia pifia: "+materia['semestre'],materia['nomMateria']);
     }
     */
-    semestres[semestre-1].innerHTML+=`<div class="materia">${materia["nomMateria"]}</div>`;
+    semestres[semestre-1].innerHTML+=`
+    <div class="materia">
+      <h3>${materia["nomMateria"]}</h3>
+      <p> creditos:  ${materia["creditos"]}</p>
+    </div>`;
 
     /*
 
