@@ -19,19 +19,19 @@
 
 		 <div class="content">
 		     <div id="semestre1">
-		       <h1 class="titulo_semestre" data-name="Ipsum">Semestre 2</h1>
+		       <h1 class="titulo_semestre" data-name="Ipsum">Semestre 1</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 2</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
 		     </div>
 		     <div id="semestre2">
-		       <h1 class="titulo_semestre" data-name="Dolor">Semestre 3</h1>
+		       <h1 class="titulo_semestre" data-name="Dolor">Semestre 2</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 4</div>
 		     </div>
 		 		<div id="semestre3">
-		       <h1 class="titulo_semestre" data-name="Sit">Semestre 4</h1>
+		       <h1 class="titulo_semestre" data-name="Sit">Semestre 3</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
@@ -43,7 +43,7 @@
 		 			<div class="materia">Calculo 4</div>
 		 		</div>
 				<div id="semestre5">
-		 			<h1 class="titulo_semestre" data-name="Sit">Semestre 4</h1>
+		 			<h1 class="titulo_semestre" data-name="Sit">Semestre 5</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
