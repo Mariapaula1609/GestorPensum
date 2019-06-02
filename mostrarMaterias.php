@@ -1,18 +1,20 @@
 <?php
 //inclye el archivo php porque tiene ula clase
 include 'Materias.php';
-$json = file_get_contents('persistencia/pensum.json');
-$materias = json_decode($json,true);
+
+//print_r($_GET);
 if(isset($_GET["codigo"]))
 {    // el codigo de la materia es n(?)
+    //echo "obteniendp masterias de: ".$_GET["codigo"];
     $codigo=$_GET["codigo"];
     $nombreArchivo="persistencia/".$codigo.".json";
     if(file_exists($nombreArchivo)){
-    //  echo  "lo encontro!";
+      //echo "exite el archivo";
     }else{
        if(copy("persistencia/pensum.json",$nombreArchivo)){
-      //   echo "archivo creado";
+         //echo "mierda";
        }else {
+         //echo "se creo el archivo ".$nombreArchivo;
         // echo "Ah ocurrido un error en el sistema, contacte al adminitrador";
        }
     }

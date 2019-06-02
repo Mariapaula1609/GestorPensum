@@ -2,10 +2,12 @@ function enviarCodigo(){
        document.formulario1.submit()
   }
 function enviarCodigoServer(codigo){
+
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        //  console.log(this.responseText);
+          console.log("dasdsa");
+
            let datos = JSON.parse(this.responseText);
            cargarMaterias(datos);
       }
@@ -15,8 +17,8 @@ function enviarCodigoServer(codigo){
 }
 function cargarMaterias(datos){
   let semestres =[];
-  for(var i = 1;i<=5;i++){
-    semestres.push(document.querySelector("#semestre"+i));
+  for(var i = 1;i<=10;i++){
+    semestres.push(document.querySelector("#materias"+i));
     semestres[i-1].innerHTML = '';
   }
   console.log(semestres);
