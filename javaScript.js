@@ -41,7 +41,8 @@ function cargarMaterias(datos){
       clase = "materiaDesactivada";
     }
     semestres[semestre-1].innerHTML+=`
-    <div class="${clase}">
+    <div class="${clase}" onClick="cambiarEstadoMateria(this);">
+      <p id= codigo> codigo: ${materia["codMateria"]} </p>
       <h3>${materia["nomMateria"]}</h3>
       <p> creditos:  ${materia["creditos"]}</p>
     </div>`;
@@ -63,4 +64,9 @@ function cargarMaterias(datos){
   */
   console.log("max materias: "+maxMaterias);
 
+}
+function cambiarEstadoMateria(elementoHtml){
+    console.log(elementoHtml.innerHTML);
+    let codigoMateria = Number(elementoHtml.querySelector("#codigo"));
+    console.log("Cambiando el estado de la materia: ",codigoMateria)
 }
