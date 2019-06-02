@@ -18,40 +18,36 @@
 		 ?>
 
 		 <div class="content">
-		     <div class="semestre">
-		       <h1 class="titulo_semestre" data-name="Lorem">Semestre 1</h1>
-		 			<div class="materia">Calculo 1</div>
-		 			<div class="materia">Calculo 2</div>
-		 			<div class="materia">Calculo 3</div>
-		 			<div class="materia">Calculo 4</div>
-		     </div>
-		     <div class="semestre1">
+		     <div id="semestre1">
 		       <h1 class="titulo_semestre" data-name="Ipsum">Semestre 2</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 2</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
 		     </div>
-		     <div class="semestre2">
+		     <div id="semestre2">
 		       <h1 class="titulo_semestre" data-name="Dolor">Semestre 3</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 4</div>
 		     </div>
-		 		<div class="semestre3">
+		 		<div id="semestre3">
 		       <h1 class="titulo_semestre" data-name="Sit">Semestre 4</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
-
 		     </div>
-		 		<div class="semestre4">
+		 		<div id="semestre4">
 		 			<h1 class="titulo_semestre" data-name="Sit">Semestre 4</h1>
 		 			<div class="materia">Calculo 1</div>
 		 			<div class="materia">Calculo 3</div>
 		 			<div class="materia">Calculo 4</div>
-
 		 		</div>
-
+				<div id="semestre5">
+		 			<h1 class="titulo_semestre" data-name="Sit">Semestre 4</h1>
+		 			<div class="materia">Calculo 1</div>
+		 			<div class="materia">Calculo 3</div>
+		 			<div class="materia">Calculo 4</div>
+		 		</div>
 		   <i class="fa fa-close strip__close"></i>
 
 	</body>

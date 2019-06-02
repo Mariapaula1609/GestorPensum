@@ -7,27 +7,27 @@
   overflow: hidden;
   color: white;
 }
-.semestre {
+#semestre5  {
   width: 20%;
   float:left;
   background: #244F75;
 }
-.semestre1 {
+#semestre1 {
   width: 20%;
   float:left;
        background: #60BFBF;
 }
-.semestre2 {
+#semestre2 {
   width: 20%;
   float:left;
        background: #8C4B7E;
 }
-.semestre3 {
+#semestre3 {
   width: 20%;
   float:left;
        background: #F8BB44;
 }
-.semestre4 {
+#semestre4 {
   width: 20%;
   float:left;
   background: #F6BB44;
