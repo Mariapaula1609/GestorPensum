@@ -22,9 +22,12 @@ function cargarMaterias(datos){
     semestres[i-1].innerHTML = '';
   }
   console.log(semestres);
-  var n =0;
+  var maxMaterias = 0;
   for (let materia of datos){
     var semestre = materia['semestre'];
+    if(semestres[semestre-1].childElementCount>maxMaterias){
+      maxMaterias  = semestres[semestre-1].childElementCount;
+    }
     /*
     if(semestre>5){
 
@@ -32,8 +35,13 @@ function cargarMaterias(datos){
       console.log("materia pifia: "+materia['semestre'],materia['nomMateria']);
     }
     */
+
+    var clase = "materia";
+    if(!materia["estadoMateria"]){
+      clase = "materiaDesactivada";
+    }
     semestres[semestre-1].innerHTML+=`
-    <div class="materia">
+    <div class="${clase}">
       <h3>${materia["nomMateria"]}</h3>
       <p> creditos:  ${materia["creditos"]}</p>
     </div>`;
@@ -42,6 +50,17 @@ function cargarMaterias(datos){
 
       */
   }
-  console.log("numero materias: "+n);
+  /*
+  for(let semestre of semestres){
+   let nemptyDivs = maxMaterias-semestre.childElementCount;
+   for(var i = 0;i<=nemptyDivs;i++){
+     semestre.innerHTML+=`
+     <div class="emptyMateria"></div>`;
+
+   }
+
+  }
+  */
+  console.log("max materias: "+maxMaterias);
 
 }

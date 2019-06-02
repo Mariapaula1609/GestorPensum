@@ -12,12 +12,31 @@
 /* Demo purposes */
 .materia{
   margin: 5px;
-  height:  80px;
+  height:  75px;
   overflow: auto;
   border-radius: 5px;
   border-style: solid;
 }
+.materiaDesactivada{
+  margin: 5px;
+  height:  75px;
+  overflow: auto;
+  border-radius: 5px;
+  border-style: solid;
+  background-color: #EF5350;
+}
+.emptyMateria{
+  height:  75px;
+}
 .materia h3{
+  padding: 0px;
+  margin: 0px;
+}
+.materiaDesactivada h3{
+  padding: 0px;
+  margin: 0px;
+}
+.materia d{
   padding: 0px;
   margin: 0px;
 }
@@ -79,7 +98,7 @@ h2 {
   margin: 0 0 16px;
 }
 h3{
-  font-size: 20px;
+  font-size: 16px;
 }
 p {
   margin: 0 0 16px;
