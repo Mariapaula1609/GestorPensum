@@ -20,10 +20,26 @@ if(isset($_GET["codigo"]))
     }
     echo file_get_contents($nombreArchivo);
 }
-else
-{
-    //echo "Error, número de Materia no especificado";
+if(isset($_GET["codigoEstado"])){
+  $codigoMateria=$_GET["codigoEstado"];
+  //Sacar el archivo json correspondiente
+  $nombreArchivo = "persistencia/".$codigo.".json";
+  $json = file_get_contents($nombreArchivo);
+  $materias = json_decode($json,true);
+  //Buscar la respectiva materia
+  foreach ($materias as $materia) {
+    if($materia['codMateria'] == $codigoMateria){
+      #Modifico el estado de la materias
+      $estado = $materia['estado'];
+      if($estado == TRUE){
+        $materia['estado'] = FALSE;
+      }else{
+        $materia['estado'] = TRUE;
+      }
+    }
+  }
+  json_encode($materias);
+  file_put_contents($nombreArchivo,$materias);
 }
-//convierte la carta en json
 
 ?>
