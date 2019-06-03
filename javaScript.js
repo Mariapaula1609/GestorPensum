@@ -66,7 +66,17 @@ function cargarMaterias(datos){
 
 }
 function cambiarEstadoMateria(elementoHtml){
-    console.log(elementoHtml.innerHTML);
-    let codigoMateria = Number(elementoHtml.querySelector("#codigo"));
-    console.log("Cambiando el estado de la materia: ",codigoMateria)
+     let codigoMateria = Number( (elementoHtml.querySelectorAll("p")[0]).innerHTML.substring(8) );
+
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+     if (this.readyState == 4 && this.status == 200) {
+         console.log("dasdsa");
+
+          let datos = JSON.parse(this.responseText);
+          cargarMaterias(datos);
+     }
+   };
+   xhttp.open("GET", "mostrarMaterias.php?codMateria="+codigoMateria, true);
+   xhttp.send();
 }
